@@ -1,8 +1,15 @@
-# Página E-Commerce🍭 
+# 🍭Página E-Commerce🍭 
 
 ![alt text](https://media.discordapp.net/attachments/1009192826128576522/1013107875670917160/logo.png?width=442&height=457)
 
-# Desarroladores de la pagina 🍔
+<br/>
+
+### **Página web diseñada para la compra-venta de dulces y golosinas, la cual facilitará la comunicación cliente-vendedor, contando con un servicio de atención al cliente integrado en la web, proporcionando una mejora y comodidad al usuario al momento de realizar un pedido.** 
+
+<br/>
+
+
+# Desarroladores de la pagina  🍬
 
  * **Marcos Diaz y Tomas Mendoza**: Se encargaron de la codificacion, tanto de la parte frontend y la parte backend.
   
