@@ -43,7 +43,7 @@
      - Encuestas realizadas
    - [Alternativas de Sistema](/PropuestaDelSistema)
    - [Recomendaciones de los Analistas de Sistemas](/PropuestaDelSistema)
-4. [Informes - Entradas y Salidas](/Informes&EntradasySalidas)
+4. [Informes - Entradas y Salidas](/Informes&EntradasYSalidas)
    - Informe
 5. [Manuales](/Manuales)
    - [Manual de Usuario](/Manuales)
