@@ -27,29 +27,29 @@
 1. [Carta de Presentación](/CartaDePresentación.pdf)
 2. [Administración del Proyecto](/AdministracionDelProyecto)
    - [Definición del problema](/AdministracionDelProyecto)
-   - Viabilidad
+   - [Viabilidad](/AdministracionDelProyecto)
      - Técnica
      - Económica
      - Operacional
-   - Planeación y Control de Actividades
+   - [Planeación y Control de Actividades](/AdministracionDelProyecto)
      - Pert
      - Gantt
 3. [Propuesta del Sistema](/PropuestaDelSistema)
-   - Resumen Ejecutivo
-   - Esquema de Estudio
+   - [Resumen Ejecutivo](/PropuestaDelSistema)
+   - [Esquema de Estudio](/PropuestaDelSistema)
      - Diagrama Casos de Uso
      - Diagrama Entidad-Relación
      - Diagrama de Clases
      - Encuestas realizadas
-   - Alternativas de Sistema
-   - Recomendaciones de los Analistas de Sistemas
+   - [Alternativas de Sistema](/PropuestaDelSistema)
+   - [Recomendaciones de los Analistas de Sistemas](/PropuestaDelSistema)
 4. [Informes - Entradas y Salidas](/Informes&EntradasySalidas)
    - Informe
-5. Manuales
-   - Manual de Usuario
-   - Manual Operacional
-     -Equipo de Trabajo
-   - Manual Técnico
-6. Página Web
-   - Manual Software(Esta comentado en todo el codigo)
+5. [Manuales](/Manuales)
+   - [Manual de Usuario](/Manuales)
+   - [Manual Operacional](/Manuales)
+     - Equipo de Trabajo
+   - [Manual Técnico](/Manuales)
+6. [Página Web](/Pagina)
+   - [Manual Software(Esta comentado en todo el codigo)](/Pagina)
 
