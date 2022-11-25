@@ -28,10 +28,19 @@
 2. Administración del Proyecto
    - Definición del problema
    - Viabilidad
+     - Técnica
+     - Económica
+     - Operacional
    - Planeación y Control de Actividades
+     - Pert
+     - Gantt
 3. Propuesta del Sistema
    - Resumen Ejecutivo
    - Esquema de Estudio
+     - Diagrama Casos de Uso
+     - Diagrama Entidad-Relación
+     - Diagrama de Clases
+     - Encuestas realizadas
    - Alternativas de Sistema
    - Recomendaciones de los Analistas de Sistemas
 4. Infromes-Entradas y Salidas
@@ -39,5 +48,6 @@
 5. Manuales
    - Manual de Usuario
    - Manual Operacional
+     -Equipo de Trabajo
    - Manual Técnico
 
