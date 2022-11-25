@@ -1,0 +1,95 @@
+{{> navbar}}
+{{!-- Carrusel --}}
+<div class="container">
+  <div
+    id="carouselExampleControls"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      {{!-- Imagen del carrusel --}}
+      <div class="carousel-item active">
+        <img
+          src="img/productos/17abf436-32b2-4ce8-9970-3cade98e06e9.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+
+      {{!-- Imagen del carrusel --}}
+      <div class="carousel-item">
+        <img
+          src="img/productos/274282204_4814242625340480_127006461799274787_n.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      {{!-- Imagen del carrusel --}}
+      <div class="carousel-item">
+        <img
+          src="img/productos/b68e77d8-5d3b-4197-a8a1-5d66407b86f0.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+    </div>
+
+    {{!-- Botón para retroceder el carrusel --}}
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    {{!-- Botón para avanzar el carrusel --}}
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+{{!-- Fin del carrusel --}}
+
+{{!-- Productos destacados --}}
+<div class="tarjeta">
+  <div class="container">
+    <h2>Productos descatados</h2>
+    <div class="row">
+      {{#producto}}
+      <div class="col-12 mb-5 col-md-6 col-lg-4">
+        <a href="/compra/{{id_producto}}">
+          <div class="card">
+            <img
+              src="{{imagen}}"
+              class="card-img-top"
+              alt="..."
+            />
+            <img
+              src="img/assets/melody.png"
+              alt="melody"
+              class="sanrio"
+            />
+          </div>
+        </a>
+      </div>
+      {{/producto}}
+    </div>
+  </div>
+</div>
+
+{{!-- Fin de productos destacados --}}
+
+{{> footer}}
+
+{{!-- Scripts --}}
+
+<script src="scripts/productos.js"></script>
