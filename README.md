@@ -24,7 +24,7 @@
 
 
 # índice🧁
-1. [Carta de Presentación](/CartaPresentacion.pdf)
+1. [Carta de Presentación](/CartaDePresentacion.pdf)
 2. [Administración del Proyecto](/AdministracionDelProyecto)
    - Definición del problema
    - Viabilidad
@@ -50,4 +50,6 @@
    - Manual Operacional
      -Equipo de Trabajo
    - Manual Técnico
+6. Página Web
+   - Manual Software(Esta comentado en todo el codigo)
 
