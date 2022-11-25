@@ -16,3 +16,14 @@
  * **Oreana Bargas**: Se encargo de todo el diseño de la pagina, contribuyendo con Mockups, tambien se encargo de la creacion de los logos.
   
  * **Ricardo Valdivia y Romina Figueroa**: Se encargaron de todo el analisis y requerimientos de la pagina y de la division de tareas.
+
+
+<br/>
+
+<br/>
+
+
+# índice🧁
+  1. dwdsd
+  2. dsd
+  3. 
