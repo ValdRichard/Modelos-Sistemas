@@ -149,8 +149,6 @@
           </ul>
         </div>
 
-        {{! Link a contactos }}
-        <a class="link-light" href="#">Contacto</a>
       </div>
       {{! Fin del contenedor }}
     </div>
@@ -165,18 +163,34 @@
       <a
         class="nav-link dropdown-toggle"
         data-bs-toggle="dropdown"
-        href="#"
+        href="/productos"
         role="button"
         aria-expanded="false"
       >Productos</a>
       <ul class="dropdown-menu">
-        {{#res.locals.producto}}
-          <li>
-            <a class="dropdown-item" href="/productos">{{nombre}}</a>
-          </li>
-        {{/res.locals.producto}}
+        <li>
+          <a href="/categoria/Chocolate" class="dropdown-item">Chocolate</a>
+        </li>
+        <li>
+          <a href="/categoria/Gomitas" class="dropdown-item">Gomitas</a>
+        </li>
+        <li>
+          <a href="/categoria/Bombones" class="dropdown-item">Bombones</a>
+        </li>
+        <li>
+          <a href="/categoria/Caramelos" class="dropdown-item">Caramelos</a>
+        </li>
+        <li>
+          <a href="/categoria/Pastillitas" class="dropdown-item">Pastillitas</a>
+        </li>
+        <li>
+          <a href="/categoria/Malvadiscos" class="dropdown-item">Malvadiscos</a>
+        </li>
+        <li>
+          <a href="/productos" class="dropdown-item">Todas las categorias</a>
+        </li>
       </ul>
     </div>
-    <a>Contacto</a>
+    <a class="link-light" href="#contacto">Contacto</a>
   </div>
 </div>

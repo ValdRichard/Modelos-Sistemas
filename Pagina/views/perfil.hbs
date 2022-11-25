@@ -25,7 +25,15 @@
         {{#Usuarios}}
           <h3 class="fs-5 pb-4"><b>Usuario</b>: {{nombre}} {{apellido}}</h3>
           <h3 class="fs-5 pb-4"><b>Correo</b>: {{email}}</h3>
-					<a class="link-dark fs-5" href="/logout">Desconectarse</a>
+          <h3>Id de usuario: {{id_usuario}}</h3>
+          <div class="row">
+            <div class="col-5">
+					  <a class="link-dark fs-5" href="/logout">Desconectarse</a>
+            </div>
+            <div class="col-5 text-end">
+              <a class="link-dark fs-5" href="/lista">Lista de usuarios</a>
+            </div>
+          </div>
         {{/Usuarios}}
       </div>
     </div>
@@ -54,7 +62,18 @@
 				<div class="compras-finalizadas p-3 mb-3">
 
           {{!-- Nombre de la compra --}}
-					<h3 class="fs-5 text-start">Orden n°{{id_orden}} id-usuario: {{id_usuario}}</h3>
+          <div class="row">
+            <div class="col-7">
+              <h3 class="fs-5 text-start">Orden n°{{id_orden}} id-usuario: {{id_usuario}}</h3>
+            </div>
+            <div class="col-5 text-end">
+            <form action="/delete/{{id_orden}}" method="post">
+              <button type="submit" style="border: none;">
+                <iconify-icon icon="material-symbols:delete-outline-sharp" class="btn btn-success rounded-circle" width="30" style="color: white;width: 50px; height: 50px; PADDING: 10px;"></iconify-icon>
+              </button>    
+            </form>
+            </div>
+          </div>
 					{{!-- Precio de la compra --}}
           <p class="fs-5 text-start">${{total}}</p>
 					<div class="d-flex justify-content-between">

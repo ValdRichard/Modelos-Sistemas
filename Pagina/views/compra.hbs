@@ -13,7 +13,7 @@
   <div class="container">
     {{#if res.locals.userAdmin}}
     <a href="/delete/{{req.params.id}}">                  
-      <iconify-icon icon="material-symbols:delete-outline-sharp" class="btn btn-success rounded-circle " style="color: white;"></iconify-icon>
+      <iconify-icon icon="material-symbols:delete-outline-sharp" class="btn btn-success rounded-circle" width="30" style="color: white;width: 50px; height: 50px; PADDING: 10px;"></iconify-icon>
     </a>
     {{/if}}
     {{#product}}
@@ -31,6 +31,7 @@
         {{/product}}
         <div class="slider d-lg-block mt-5">
           <div class="row">
+            <h1 class="mb-5">Productos relacionados</h1>
             {{#each relacionado}}
             <div class="col-6 col-sm-3">
               <a href="/compra/{{id_producto}}">

@@ -94,10 +94,20 @@ async function proceso(req, res, next) {
   next();
 }
 
+async function borrar(req, res, next) {
+  await ordenes.destroy({
+    where: {
+      id_orden: req.params.id,
+    },
+  });
+  next();
+}
+
 module.exports = {
   getAll,
   editar,
   update,
   ordenitems,
   proceso,
+  borrar,
 };

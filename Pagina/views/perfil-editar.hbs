@@ -63,18 +63,18 @@
     {{!-- Fin del campo para cambiar el teléfono celular --}}
 
     {{!-- Formularios para contraseñas --}}
-    <h2 class="fs-5 text-decoration-underline my-5">Cambio de contraseña (Dejar en blanco para no cambiar nada)</h2>
+    <h2 class="fs-5 text-decoration-underline my-5">Cambio de contraseña (Repita la contraseña si no la va a cambiar)</h2>
     <div class="mb-3">
       <label class="form-label fw-bold">Contraseña actual</label>
-      <input type="password" class="form-control" name="contra">
+      <input type="password" class="form-control" name="contra" required>
     </div>
     <div class="mb-3">
       <label class="form-label fw-bold">Nueva contraseña</label>
-      <input type="password" class="form-control" name="contrasena">
+      <input type="password" class="form-control" name="contrasena" required>
     </div>
     <div class="mb-3">
       <label class="form-label fw-bold">Confirmar nueva contraseña</label>
-      <input type="password" class="form-control">
+      <input type="password" class="form-control" required>
     </div>
     {{!-- Fin del formulario para contraseñas --}}
     {{/Usuarios}}

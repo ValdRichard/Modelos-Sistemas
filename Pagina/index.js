@@ -22,6 +22,8 @@ const productosController = require("./controller/ProductosController");
 const carritoController = require("./controller/CarritoController");
 const creadorController = require("./controller/CreadorController");
 
+const listaController = require("./controller/listaController");
+
 const ordenController = require("./controller/ordenController");
 
 const MiddlewareController = require("./controller/authMiddleware");
@@ -99,9 +101,13 @@ app.get(
 
 app.post("/editar", perfilController.update);
 
-app.get("/logout", loginController.logout);
+app.post("/delete/:id", perfilController.borrar, perfilController.getAll);
+
+app.get("/logout", loginController.logout, homeController.home);
 
 app.get("/ayuda", ayudaController.ayuda);
+
+app.get("/lista", listaController.getAll);
 
 // Productos
 
@@ -133,7 +139,12 @@ app.post("/checkout", apireset.checkout);
 
 app.get("/creador", creadorController.creador);
 
-app.post("/files", creadorController.upload, creadorController.create);
+app.post(
+  "/files",
+  creadorController.upload,
+  creadorController.create,
+  homeController.home
+);
 
 app.get("*", homeController.notfound);
 
