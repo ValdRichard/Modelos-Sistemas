@@ -25,8 +25,8 @@
 
 # índice🧁
 1. [Carta de Presentación](/CartaPresentacion.pdf)
-2. Administración del Proyecto
-   - Definición del problema
+2. [Administración del Proyecto](/AdministracionDelProyecto)
+   - [Definición del problema](/AdministracionDelProyecto/Definicion del proble.docx)
    - Viabilidad
      - Técnica
      - Económica
