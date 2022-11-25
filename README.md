@@ -24,7 +24,7 @@
 
 
 # índice🧁
-1. [Carta de Presentación](/CartaDePresentacion.pdf)
+1. [Carta de Presentación](/CartaDePresentación.pdf)
 2. [Administración del Proyecto](/AdministracionDelProyecto)
    - Definición del problema
    - Viabilidad
