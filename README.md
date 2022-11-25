@@ -24,6 +24,20 @@
 
 
 # índice🧁
-  1. dwdsd
-  2. dsd
-  3. 
+1. [Carta de Presentación](/main.md)
+2. Administración del Proyecto
+   - Definición del problema
+   - Viabilidad
+   - Planeación y Control de Actividades
+3. Propuesta del Sistema
+   - Resumen Ejecutivo
+   - Esquema de Estudio
+   - Alternativas de Sistema
+   - Recomendaciones de los Analistas de Sistemas
+4. Infromes-Entradas y Salidas
+   - Informe
+5. Manuales
+   - Manual de Usuario
+   - Manual Operacional
+   - Manual Técnico
+
