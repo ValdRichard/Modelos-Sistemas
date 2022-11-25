@@ -24,7 +24,7 @@
 
 
 # índice🧁
-1. [Carta de Presentación](/main.md)
+1. [Carta de Presentación](/Modelos-Sistemas.md)
 2. Administración del Proyecto
    - Definición del problema
    - Viabilidad
