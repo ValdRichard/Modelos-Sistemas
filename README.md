@@ -26,7 +26,7 @@
 # índice🧁
 1. [Carta de Presentación](/CartaPresentacion.pdf)
 2. [Administración del Proyecto](/AdministracionDelProyecto)
-   - [Definición del problema](/AdministracionDelProyecto/Definicion_del_problema.docx)
+   - Definición del problema
    - Viabilidad
      - Técnica
      - Económica
@@ -34,7 +34,7 @@
    - Planeación y Control de Actividades
      - Pert
      - Gantt
-3. Propuesta del Sistema
+3. [Propuesta del Sistema](/PropuestaDelSistema)
    - Resumen Ejecutivo
    - Esquema de Estudio
      - Diagrama Casos de Uso
@@ -43,7 +43,7 @@
      - Encuestas realizadas
    - Alternativas de Sistema
    - Recomendaciones de los Analistas de Sistemas
-4. Infromes-Entradas y Salidas
+4. [Informes - Entradas y Salidas](/Informes&EntradasYSalidas)
    - Informe
 5. Manuales
    - Manual de Usuario
