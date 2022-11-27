@@ -1,3 +1,4 @@
+//Mostrar las ordenes
 let detalle = document.querySelectorAll("#detalles");
 let container = document.querySelector(".modal-body");
 let pre = document.querySelector(".pre");
