@@ -1,3 +1,4 @@
+// Herramientas
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../db/Connection.js");
 
@@ -6,6 +7,8 @@ const { productos } = require("../models/Productos");
 const multer = require("multer");
 const path = require("path");
 
+//Si es administrador renderiza el creador de productos
+
 async function creador(req, res) {
   if (req.session.user === 1) {
     res.render("creador", { res });
@@ -13,6 +16,8 @@ async function creador(req, res) {
     res.render("index", { res });
   }
 }
+
+// Para subir imagenes
 
 var destino = "";
 
@@ -42,6 +47,7 @@ var upload = multer({
   },
 }).single("avatar");
 
+// Comando para crear el producto, tomando como base lo que ponga en el formulario
 async function create(req, res, next) {
   const datos = req.body;
 
