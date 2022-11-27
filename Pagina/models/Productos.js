@@ -1,3 +1,4 @@
+//Modelo de producto 
 const { Model, DataTypes} = require('sequelize');
 const sequelize = require('../db/Connection');
 
