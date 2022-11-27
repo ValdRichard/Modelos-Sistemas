@@ -1,3 +1,4 @@
+//dependencias
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -10,6 +11,7 @@ const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");
 
+//controladores
 const homeController = require("./controller/HomeController");
 
 const loginController = require("./controller/LoginController");
@@ -48,6 +50,7 @@ app.use(
 
 app.use(express.urlencoded({ extended: false }));
 
+//layouts
 app.engine(
   "hbs",
   exphbs.engine({
@@ -75,7 +78,10 @@ app.use(MiddlewareController.sessionMiddleware);
 
 //redirecciones
 
+//index
 app.get("/", homeController.home);
+
+//login y register
 
 app.get("/login", loginController.login);
 
@@ -105,11 +111,9 @@ app.post("/delete/:id", perfilController.borrar, perfilController.getAll);
 
 app.get("/logout", loginController.logout, homeController.home);
 
-app.get("/ayuda", ayudaController.ayuda);
-
 app.get("/lista", listaController.getAll);
 
-// Productos
+// Productos y carrito
 
 app.get("/compra/:id", compraController.compra);
 
@@ -127,9 +131,11 @@ app.get(
   carritoController.carrito
 );
 
+app.get("/ayuda", ayudaController.ayuda);
+
 app.get("/orden/:id", apireset.ordenItems);
 
-//traer producto al carrito
+// Api rest
 
 app.post("/estado/:id", perfilController.proceso, perfilController.getAll);
 
@@ -145,6 +151,8 @@ app.post(
   creadorController.create,
   homeController.home
 );
+
+//not found page 
 
 app.get("*", homeController.notfound);
 
