@@ -1,3 +1,4 @@
+//Herramientas
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../db/Connection.js");
 
@@ -6,10 +7,12 @@ const { ordenes } = require("../models/Orden");
 const { ordenesitems } = require("../models/OrdenesItem");
 
 module.exports = {
+  //Trae los productos
   product: async function (req, res) {
     let product = await productos.findByPk(req.params.id);
     return res.json(product);
   },
+  //Crea la orden
   checkout: async function (req, res) {
     let data = req.body.ordenItems;
     console.log(data);
@@ -30,6 +33,7 @@ module.exports = {
 
     res.json({ ok: true, status: 200, order: orden });
   },
+  //Trae las ordenes de los productos
   ordenItems: async function (req, res) {
     let orden = await ordenesitems.findAll({
       where: { id_orden: req.params.id },
