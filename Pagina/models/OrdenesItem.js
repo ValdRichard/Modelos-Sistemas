@@ -1,3 +1,4 @@
+//Modelo de ordenes de productos
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../db/Connection");
 
