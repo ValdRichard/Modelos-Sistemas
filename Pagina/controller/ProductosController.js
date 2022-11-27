@@ -3,6 +3,8 @@ const sequelize = require("../db/Connection.js");
 
 const { productos } = require("../models/Productos");
 
+//Muestra todo los productos
+
 async function getAll(req, res) {
   let producto = await productos.findAll({ offset: 0, limit: 9 });
 
@@ -11,6 +13,7 @@ async function getAll(req, res) {
   res.render("productos", { producto, res });
 }
 
+//Muestra los prductos con la categoria que selecciono
 async function categoria(req, res) {
   let producto = await productos.findAll({
     offset: 0,
@@ -20,6 +23,8 @@ async function categoria(req, res) {
 
   res.render("productos", { producto, res });
 }
+
+// Paginacion
 
 async function paginacion(req, res) {
   const offset = +req.params.offset;
