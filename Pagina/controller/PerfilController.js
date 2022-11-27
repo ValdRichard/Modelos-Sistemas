@@ -1,9 +1,13 @@
+
+//Herramientas
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../db/Connection.js");
 
 const { usuarios } = require("../models/Usuario.js");
 const { ordenes } = require("../models/Orden.js");
 const { ordenesitems } = require("../models/Ordenesitem.js");
+
+//Renderiza el perfil y trae las ordenes que realizo, si es administrador muestra las ordenes que estan en proceso
 
 async function getAll(req, res, next) {
   let Usuarios = await usuarios.findOne({
@@ -34,6 +38,8 @@ async function getAll(req, res, next) {
   res.render("perfil", { Usuarios, res, order });
 }
 
+// Editar los datos del usuario
+
 async function editar(req, res) {
   let Usuarios = await usuarios.findOne({
     where: { id_usuario: req.session.user },
@@ -42,6 +48,7 @@ async function editar(req, res) {
   res.render("perfil-editar", { res, Usuarios });
 }
 
+//Trae las ordenes
 async function ordenitems(req, res) {
   let orderitems = await ordenesitems.findAll({
     where: {
@@ -50,6 +57,8 @@ async function ordenitems(req, res) {
   });
   console.log(orderitems);
 }
+
+// SUbe los datos del usuario
 
 async function update(req, res) {
   const datos = req.body;
@@ -79,6 +88,7 @@ async function update(req, res) {
   }
 }
 
+// Si es administrador puede cambiar el estado de la orden
 async function proceso(req, res, next) {
   const datos = req.body;
 
@@ -93,6 +103,8 @@ async function proceso(req, res, next) {
 
   next();
 }
+
+//Para borrar ordenes
 
 async function borrar(req, res, next) {
   await ordenes.destroy({
