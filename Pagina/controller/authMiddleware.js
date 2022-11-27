@@ -1,3 +1,4 @@
+//Herramientas
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../db/Connection.js");
 
@@ -5,6 +6,7 @@ const { usuarios } = require("../models/Usuario.js");
 
 const { productos } = require("../models/Productos");
 
+//Verificadores de sessiones y administrador
 authMiddleware = (req, res, next) => {
   if (!req.session.user) {
     return res.render("login", { res });
