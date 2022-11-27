@@ -1,3 +1,4 @@
+// Crear ordenes
 function setcarritoVacio() {
   tbody.innerHTML = `
           <div class="alert alert-warning my-2 text-center">No tienes productos en el carrito</div>        
