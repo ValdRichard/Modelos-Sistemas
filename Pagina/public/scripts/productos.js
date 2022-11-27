@@ -1,10 +1,8 @@
+// Para traer productos del carrito
 function productosEnElCarrito(){
   return localStorage.carrito ? JSON.parse(localStorage.carrito).length:0;
 
 }
-
-
-
 
 botonesComprar = document.querySelectorAll(".addToCart");
 botonesComprar = document.querySelectorAll(".addToCart");
