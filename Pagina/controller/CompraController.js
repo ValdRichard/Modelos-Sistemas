@@ -3,6 +3,7 @@ const sequelize = require("../db/Connection.js");
 
 const { productos } = require("../models/Productos");
 
+//renderizacion de los detalles del producto
 async function compra(req, res) {
   let product = await productos.findByPk(req.params.id);
 
@@ -16,6 +17,8 @@ async function compra(req, res) {
 
   res.render("compra", { product, res, relacionado, req });
 }
+
+//Comando para que el administrador pueda borrar productos
 
 async function borrar(req, res, next) {
   if (res.locals.userAdmin) {
