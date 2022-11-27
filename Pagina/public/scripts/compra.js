@@ -1,3 +1,4 @@
+//seccion para verr los detalles del producto
 function productosEnElCarrito(){
     return localStorage.carrito ? JSON.parse(localStorage.carrito).length:0;
   
