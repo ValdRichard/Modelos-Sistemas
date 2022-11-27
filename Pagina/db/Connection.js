@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 
-
+//crea la conexion con la base de datos
 const db = new Sequelize('e-commerce', 'root', '', {
   host: 'localhost',
   dialect: 'mysql',
